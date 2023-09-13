@@ -1,0 +1,9 @@
+.github
+.husky
+src
+.commitlintrc.yaml
+.eslintrc.yml
+.lintstagedrc.yml
+.prettierrc.yml
+package-lock.json
+tsconfig.json
