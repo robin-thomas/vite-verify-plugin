@@ -43,7 +43,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "vite": "^3.0.0"
+    "vite": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
