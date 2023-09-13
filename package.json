@@ -1,0 +1,57 @@
+{
+  "name": "vite-verify-plugin",
+  "description": "Vite plugin that verifies the bundle for unknown dependencies",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robin-thomas/vite-verify-plugin.git"
+  },
+  "keywords": [
+    "vite",
+    "vite plugin",
+    "vite verify plugin",
+    "vite verify",
+    "vite unknown dependencies",
+    "vite unknown",
+    "vite unknown plugin",
+    "vite unknown dependencies plugin",
+    "vite unknown dependencies verify",
+    "vite"
+  ],
+  "author": "Robin Thomas <robinthomas2591@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robin-thomas/vite-verify-plugin/issues"
+  },
+  "homepage": "https://github.com/robin-thomas/vite-verify-plugin#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --clean --format cjs,esm",
+    "lint": "eslint src/ --ext .ts",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "eslint": "^8.49.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0"
+  }
+}
